@@ -1,3 +1,4 @@
+import Nav from "@/components/Nav";
 import "../styles/global.css";
 import "../styles/global.css";
 
@@ -14,7 +15,10 @@ const RootLayout = ({ children }) => {
           <div className="gradient" />
         </div>
 
-        <main className="app">{children}</main>
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   );
